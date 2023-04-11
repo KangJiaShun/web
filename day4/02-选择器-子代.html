@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 这是后代选择器 */
+        /* div a{
+            color: red;
+        } */
+        /* 我要div的儿子颜色是红色孙子是绿色 */
+        div>a{
+            color: red;
+        }
+        div>p>a{
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        父级
+        <a href="#">这是div里的a</a>
+        <p>
+            这是div里面的p标签
+            <a href="#">这是div里的p里的a标签</a>
+        </p>
+    </div>
+</body>
+</html>

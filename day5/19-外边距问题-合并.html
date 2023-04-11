@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+
+        .one{
+            margin-bottom: 50px;
+        }
+        /* 垂直布局 的 块级元素 ，上下的 margin 会合并
+        结果：最终两者距离为 margin 的最大值
+        解决方法：避免就好
+        只给其中一个盒子设置 margin 即可 */
+        .two{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">111</div>
+    <div class="two">222</div>
+</body>
+</html>
